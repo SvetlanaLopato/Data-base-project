@@ -1,0 +1,146 @@
+@import './variables.less';
+
+.button {
+	border: none;
+	line-height: 40px;
+	font-size: 16px;
+	color: @white;
+	cursor: pointer;
+
+	&.submit-button {
+		width: 65%;
+		margin-left: 35%;
+		text-transform: uppercase;
+		font-weight: bold;
+		background: @emerald;
+	}
+
+	span, a {
+		display: inline-block;
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+
+.create-form {
+	border: 2px solid @grey-darker;
+	padding: 20px;
+	color: @grey-lighter;
+
+	label {
+		display: inline-block;
+		width: 150px;
+	}
+
+	.form-field > input, textarea, select {
+		outline: none;
+		border: 1px solid @grey-darker;
+		padding: 5px 10px;
+		width: 300px;
+	}
+}
+
+.form-field {
+	margin-bottom: 10px;
+}
+
+.table {
+	margin-top: 20px;
+    border: 2px solid @grey-darker;
+	overflow: auto;
+
+	> div {
+		display: flex;
+		width: 200%;
+	}
+}
+
+.table-header {
+	background: @grey-darker;
+}
+
+.table-row {
+	border-bottom: 1px solid @grey-darker;
+}
+
+.table-cell {
+	width: 250px;
+	padding: 10px;
+	flex-shrink: 0;
+}
+
+.table-manager {
+	border: 2px solid @grey-darker;
+	padding: 20px;
+
+	button {
+		display: block;
+	}
+
+	label {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+}
+
+.table-option {
+	display: block;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	border: 1px solid @grey-darker;
+
+	label {
+		margin: 0 10px;
+	}
+}
+
+.submit-button {
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: @white;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	background: @grey-darker;
+
+	&:hover {
+		background: @emerald;
+	}
+}
+
+.print {
+	position: absolute;
+	right: 20px;
+	line-height: 20px;
+	color: @grey-lighter;
+	text-transform: none;
+
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.profile-info {
+	border: 2px solid @grey-darker;
+
+	> div {
+		padding: 10px 20px;
+	}
+
+	span {
+		width: 120px;
+	    display: inline-block;
+	}
+}
+
+.error-message {
+	color: @red;
+	margin-left: 20px;
+}
+
+.required-field:after {
+	content: '*';
+	color: @red;
+	font-size: 12px;
+}
